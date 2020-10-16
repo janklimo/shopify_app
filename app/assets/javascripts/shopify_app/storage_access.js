@@ -56,7 +56,7 @@
 
   StorageAccessHelper.prototype.setCookie = function(value) {
     if(!this.sameSiteNoneIncompatible(navigator.userAgent)) {
-      value += '; secure; SameSite=None'
+      value += '; Secure; SameSite=None'
     }
     document.cookie = value;
   }
